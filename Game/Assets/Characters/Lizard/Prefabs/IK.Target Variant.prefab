@@ -9,8 +9,8 @@ Rigidbody:
   m_GameObject: {fileID: 5408128016247438280}
   serializedVersion: 2
   m_Mass: 0.1
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 2
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -23,7 +23,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5408128016247438280}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b650b8c3cebc9c74f80762f9ee5d93a8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -38,15 +38,15 @@ SpringJoint:
   m_GameObject: {fileID: 5408128016247438280}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.5, z: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_Spring: 10
-  m_Damper: 1
+  m_Damper: 5
   m_MinDistance: 0
   m_MaxDistance: 0
-  m_Tolerance: 0.025
+  m_Tolerance: 0.1
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -65,7 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca6936384a6bd747b4bcc2cf522ff84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementForce: 0.05
+  forwardTransform: {fileID: 0}
+  movementForce: 4
 --- !u!1001 &7109727019934659216
 PrefabInstance:
   m_ObjectHideFlags: 0

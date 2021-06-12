@@ -25,6 +25,8 @@ public class PlayerInputController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_feet.Any(p => !p.IsAttached)) return;
+
         mainBody.AddForce(_currentForce);
     }
 
@@ -36,6 +38,11 @@ public class PlayerInputController : MonoBehaviour
         var input = context.ReadValue<Vector2>();
 
         var eulerAngles = forwardTransform.eulerAngles;
-        _currentForce = new Vector3(input.x, 0 , input.y) * movementForce;
+        _currentForce = new Vector3(-input.x, 0 , -input.y) * movementForce;
+    }
+
+    public void RotateBody(InputAction.CallbackContext context)
+    {
+
     }
 }

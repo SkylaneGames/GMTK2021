@@ -12,7 +12,6 @@ public class FootController : MonoBehaviour
     public float movementForce = 0.01f;
 
     private Rigidbody _rigidbody;
-    private Renderer _render;
 
     private Vector3 _currentForce;
 
@@ -21,7 +20,6 @@ public class FootController : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _render = GetComponent<Renderer>();
     }
 
     private void Start()
@@ -31,6 +29,7 @@ public class FootController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsAttached) return;
         _rigidbody.AddForce(_currentForce);
     }
 
@@ -38,26 +37,22 @@ public class FootController : MonoBehaviour
     {
         IsAttached = true;
         _rigidbody.isKinematic = true;
-        _render.enabled = false;
     }
 
     private void Release()
     {
         IsAttached = false;
         _rigidbody.isKinematic = false;
-        _render.enabled = true;
     }
 
     public void GrabOrRelease(InputAction.CallbackContext context)
     {
         if (context.started)
         {
-            Debug.Log($"[{name}] : Releasing Grip");
             Release();
         }
         else if (context.canceled)
         {
-            Debug.Log($"[{name}] : Grabbing on");
             Grab();
         }
     }
