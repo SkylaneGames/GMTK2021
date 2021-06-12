@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardTransform: {fileID: 0}
-  movementForce: 4
+  movementForce: 2
 --- !u!1001 &7109727019934659216
 PrefabInstance:
   m_ObjectHideFlags: 0
