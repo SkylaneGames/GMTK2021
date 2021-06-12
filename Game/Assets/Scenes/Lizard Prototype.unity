@@ -787,6 +787,10 @@ PrefabInstance:
       value: 0.009299995
       objectReference: {fileID: 0}
     - target: {fileID: 3762284453037611307, guid: 897535381efa40443a6103e80262ca94, type: 3}
+      propertyPath: m_Tolerance
+      value: 1.00000005e-20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3762284453037611307, guid: 897535381efa40443a6103e80262ca94, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 1.110223e-15
       objectReference: {fileID: 0}

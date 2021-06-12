@@ -140,7 +140,7 @@
                     "id": "5f5e43be-97a2-4dc6-8c45-7ce6d045ac8f",
                     "path": "<Mouse>/delta",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "ScaleVector2(x=0.05,y=0.05)",
                     "groups": "Keyboard&Mouse",
                     "action": "Move Feet",
                     "isComposite": false,
