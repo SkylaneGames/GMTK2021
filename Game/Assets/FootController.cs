@@ -113,7 +113,7 @@ public class FootController : MonoBehaviour
         if (IsAttached) return;
         
         var input = context.ReadValue<Vector2>();
-        _currentForce = new Vector3(input.x, -input.y, 0) * movementForce;
+        _currentForce = new Vector3(input.x, input.y, 0) * movementForce;
         _currentForce = forwardTransform.localRotation * _currentForce;
     }
 }

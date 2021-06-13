@@ -472,18 +472,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lizard
       objectReference: {fileID: 0}
-    - target: {fileID: 537027752219154270, guid: 897535381efa40443a6103e80262ca94, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1419509141}
-    - target: {fileID: 537027752410896515, guid: 897535381efa40443a6103e80262ca94, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1419509141}
-    - target: {fileID: 537027753277238392, guid: 897535381efa40443a6103e80262ca94, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1419509141}
     - target: {fileID: 1019882451718807430, guid: 897535381efa40443a6103e80262ca94, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -528,9 +516,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4653861958399527182, guid: 897535381efa40443a6103e80262ca94, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1419509141}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 897535381efa40443a6103e80262ca94, type: 3}
