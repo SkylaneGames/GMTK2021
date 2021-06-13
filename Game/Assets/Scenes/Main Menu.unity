@@ -261,9 +261,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Control \t\t\tKeyboard \tGame Pad\nMove Body/Leg  \tWASD\tLeft Analog
-    Stick\nLift Feet:\t\n    Left Arm \t\tJ \t\tLeft Bumper\n    Left Leg \t\tK \t\tLeft
-    Trigger\n    Right Leg \t\tL \t\tRight Trigger\n    Right Arm \t\t; \t\tRight
-    Bumper"
+    Stick\nLift Feet:\t\n    Left Arm \t\tJ or I\t\tLeft Bumper\n    Left Leg \t\tK
+    \t\tLeft Trigger\n    Right Leg \t\tL \t\tRight Trigger\n    Right Arm \t\t;
+    or O\tRight Bumper"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
