@@ -79,6 +79,17 @@
                 },
                 {
                     "name": "",
+                    "id": "e9509a60-1839-4c04-bcb7-1f8ccc5e8ea1",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Lift Left Arm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "eb61a478-7214-4567-88c0-7d607c6b207f",
                     "path": "<Keyboard>/semicolon",
                     "interactions": "",
@@ -95,6 +106,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Lift Right Arm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4ed70fa-53ea-4504-a908-956dd6507fd8",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Lift Right Arm",
                     "isComposite": false,
                     "isPartOfComposite": false
