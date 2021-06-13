@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 631895106568087608, guid: 3c458fbf4f4764345a3a3170c18243ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 631895106568087615, guid: 3c458fbf4f4764345a3a3170c18243ff, type: 3}
       propertyPath: m_Volume
       value: 0.3
@@ -414,6 +418,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5045997317780219658, guid: b11489cbb95eb45dfadaedc2e2354113, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224549274941484345, guid: b11489cbb95eb45dfadaedc2e2354113, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6398702273125579078, guid: b11489cbb95eb45dfadaedc2e2354113, type: 3}
