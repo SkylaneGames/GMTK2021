@@ -10,6 +10,7 @@ public class PlayerInputController : MonoBehaviour
 {
     public Rigidbody mainBody;
     public float movementForce = 1f;
+    public float angularForce = 1f;
     public Transform forwardTransform;
     
 
@@ -17,6 +18,7 @@ public class PlayerInputController : MonoBehaviour
 
 
     private Vector3 _currentForce;
+    private float _currentAngularForce;
 
     private void Awake()
     {
@@ -25,24 +27,28 @@ public class PlayerInputController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_feet.Any(p => !p.IsAttached)) return;
+        if (_feet.All(p => !p.IsAttached)) return;
 
-        mainBody.AddForce(_currentForce);
+        mainBody.AddRelativeTorque(0, 0, _currentAngularForce);
+        mainBody.AddRelativeForce(_currentForce);
     }
 
     public void ShiftWeight(InputAction.CallbackContext context)
     {
         // If any feet are detached then don't shift weight, shift body instead.
-        if (_feet.Any(p => !p.IsAttached)) return;
+        //if (_feet.Any(p => !p.IsAttached)) return;
 
         var input = context.ReadValue<Vector2>();
 
-        var eulerAngles = forwardTransform.eulerAngles;
-        _currentForce = new Vector3(-input.x, 0 , -input.y) * movementForce;
+        _currentForce = new Vector3(0, input.y, 0) * movementForce;
+        _currentAngularForce = input.x * angularForce;
     }
 
-    public void RotateBody(InputAction.CallbackContext context)
-    {
+    //public void RotateBody(InputAction.CallbackContext context)
+    //{
+    //    //if (_feet.Any(p => !p.IsAttached)) return;
 
-    }
+    //    var input = context.ReadValue<float>();
+    //    _currentAngularForce = input * angularForce;
+    //}
 }
