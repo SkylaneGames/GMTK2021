@@ -62,7 +62,7 @@ public class FootController : MonoBehaviour
         _rigidbody.isKinematic = true;
         //Debug.Log($"Setting point {hit.point}, for transform at {transform.position}");
         transform.position = hit.point;
-        //transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+        transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
     }
 
     private RaycastHit? GetClosestPointOnGround()
@@ -81,6 +81,13 @@ public class FootController : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawRay(transform.position, GetLizardDown());
+        var forwardForce = forwardTransform.rotation * Vector3.up;
+        var rightForce = forwardTransform.rotation * Vector3.left; //inverse left/right
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(transform.position, forwardForce);
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, rightForce);
+
     }
 
     private Vector3 GetLizardDown()
@@ -113,7 +120,7 @@ public class FootController : MonoBehaviour
         if (IsAttached) return;
         
         var input = context.ReadValue<Vector2>();
-        _currentForce = new Vector3(input.x, input.y, 0) * movementForce;
-        _currentForce = forwardTransform.localRotation * _currentForce;
+        _currentForce = new Vector3(-input.x, input.y, 0) * movementForce;
+        _currentForce = forwardTransform.rotation * _currentForce;
     }
 }
