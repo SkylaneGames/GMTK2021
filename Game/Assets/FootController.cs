@@ -5,6 +5,7 @@ using System.Configuration;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody))]
 public class FootController : MonoBehaviour
@@ -12,8 +13,11 @@ public class FootController : MonoBehaviour
     public Transform forwardTransform;
     public float movementForce = 0.01f;
     public float grabDistance = 1f;
+    public AudioClip[] footsteps;
+    public AudioClip[] footRelease;
 
     private Rigidbody _rigidbody;
+    private AudioSource _audio;
 
     private Vector3 _currentForce;
 
@@ -23,6 +27,7 @@ public class FootController : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -63,6 +68,10 @@ public class FootController : MonoBehaviour
         //Debug.Log($"Setting point {hit.point}, for transform at {transform.position}");
         transform.position = hit.point;
         transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+
+        var clip = footsteps[Random.Range(0, footsteps.Length)];
+        _audio.clip = clip;
+        _audio.Play();
     }
 
     private RaycastHit? GetClosestPointOnGround()
@@ -101,6 +110,10 @@ public class FootController : MonoBehaviour
         _shouldAttach = false;
         IsAttached = false;
         _rigidbody.isKinematic = false;
+
+        var clip = footRelease[Random.Range(0, footsteps.Length)];
+        _audio.clip = clip;
+        _audio.Play();
     }
 
     public void GrabOrRelease(InputAction.CallbackContext context)

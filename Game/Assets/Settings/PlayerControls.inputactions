@@ -58,7 +58,7 @@
                 {
                     "name": "",
                     "id": "0a131545-c885-4367-bd19-0a78fce90516",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -80,7 +80,7 @@
                 {
                     "name": "",
                     "id": "eb61a478-7214-4567-88c0-7d607c6b207f",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/semicolon",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -102,7 +102,7 @@
                 {
                     "name": "",
                     "id": "1b45bfc4-9e72-4641-a7f8-104903b62279",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -124,7 +124,7 @@
                 {
                     "name": "",
                     "id": "a75304a5-8c5c-4d34-b192-01ced645fd17",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -211,8 +211,8 @@
                 },
                 {
                     "name": "",
-                    "id": "2a24d0a9-f9d2-480a-a0b9-62c457115e4a",
-                    "path": "<Gamepad>/leftStick",
+                    "id": "b3b33a5c-2fc8-482b-b0b6-f6c1f3bfe5cf",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -222,8 +222,8 @@
                 },
                 {
                     "name": "",
-                    "id": "b3b33a5c-2fc8-482b-b0b6-f6c1f3bfe5cf",
-                    "path": "<Gamepad>/rightStick",
+                    "id": "2a24d0a9-f9d2-480a-a0b9-62c457115e4a",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
