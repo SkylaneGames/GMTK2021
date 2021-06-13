@@ -505,7 +505,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0.0425, y: -0.031999994, z: 0.0067999843}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0.0425, y: -0.031999994, z: 0.0067999843}
+  m_ConnectedAnchor: {x: -0.25, y: -0.031999994, z: 0.0067999843}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 5
@@ -529,7 +529,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: -0.0425, y: 0.027200008, z: 0.0067999843}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: -0.0425, y: 0.027200008, z: 0.0067999843}
+  m_ConnectedAnchor: {x: 0.25, y: 0.027200008, z: 0.0067999843}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 5
@@ -553,7 +553,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0.0425, y: 0.027900005, z: 0.0067999843}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0.0425, y: 0.027900005, z: 0.0067999843}
+  m_ConnectedAnchor: {x: -0.25, y: 0.027900005, z: 0.0067999843}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 5
@@ -577,7 +577,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: -0.0425, y: -0.031700015, z: 0.0067999843}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: -0.0425, y: -0.031700015, z: 0.0067999843}
+  m_ConnectedAnchor: {x: 0.25, y: -0.031700015, z: 0.0067999843}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 5
@@ -896,8 +896,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Mass
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4439336558415980998, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Anchor.x
@@ -1018,8 +1030,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Mass
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4439336558415980998, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Anchor.x
@@ -1285,8 +1309,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Mass
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4439336558415980998, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Anchor.x
@@ -1535,8 +1571,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Mass
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294134627584871360, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4439336558415980998, guid: 5f57204657196cb4690cc8203b3bb7b0, type: 3}
       propertyPath: m_Anchor.x
